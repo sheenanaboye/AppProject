@@ -23,13 +23,14 @@ class MainActivity : AppCompatActivity() {
             var lastname = lastName.text.toString()
             var emailadd = emailAdd.text.toString()
 
-//            val intent = Intent(this@MainActivity, nextPage::class.java)
-//            intent.putExtra("First Name", firstname)
-//            intent.putExtra("Last Name", lastname)
-//            intent.putExtra("Email", emailadd)
-//            startActivity(intent)
+            val intent = Intent(this@MainActivity, mainPage::class.java)
+            intent.putExtra("First Name", firstname)
+            intent.putExtra("Last Name", lastname)
+            intent.putExtra("Email", emailadd)
+            startActivity(intent)
 
         }
-
     }
+
 }
+
